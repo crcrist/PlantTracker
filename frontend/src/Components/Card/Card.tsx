@@ -11,7 +11,7 @@ const Card: React.FC<Props> = ({companyName, ticker, price}: Props) : JSX.Elemen
     return ( 
         <div className = "card">
             <img
-            src="C:/Users/Connor/Pictures/frog.jpg"
+            //src="C:/Users/Connor/Pictures/frog.jpg"
             alt="Image"
             />
             <div className = "details">
