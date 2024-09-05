@@ -1,5 +1,11 @@
 {
   "dependencies": {
-    "lucide-react": "^0.436.0"
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "react-spinners": "^0.13.8",
+    "react-toastify": "^10.0.4"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0"
   }
 }
