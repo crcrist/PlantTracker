@@ -37,7 +37,7 @@ const Card: React.FC<Props> = ({
         symbol={searchResult.symbol}
       />
     </div>
-    )
+    );
 };
 
 export default Card;

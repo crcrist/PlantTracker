@@ -5,11 +5,13 @@ import Navbar from './Components/Navbar/Navbar';
 
 
 function App() {
-  return <>
+  return ( 
+    <>
   <Navbar />
   <Outlet />
   </>
-};
+  );
+}
  
 
 export default App;

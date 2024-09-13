@@ -1,4 +1,5 @@
 import React, { useState, ChangeEvent, SyntheticEvent } from "react";
+import Navbar from "../../Components/Navbar/Navbar";
 import { CompanySearch } from "../../company";
 import { searchCompanies } from "../../api";
 import Search from "../../Components/Search/Search";
@@ -19,6 +20,9 @@ const SearchPage = (props: Props) => {
 
   const onPortfolioCreate = (e: any) => {
     e.preventDefault();
+    //DO NOT DO THIS
+    // portfolioValues.push(event.target[0].value)
+    // setPortfolioValues(portfolioValues);
     const exists = portfolioValues.find((value) => value === e.target[0].value);
     if (exists) return;
     const updatedPortfolio = [...portfolioValues, e.target[0].value];
@@ -36,6 +40,7 @@ const SearchPage = (props: Props) => {
   const onSearchSubmit = async (e: SyntheticEvent) => {
     e.preventDefault();
     const result = await searchCompanies(search);
+    //setServerError(result.data);
     if (typeof result === "string") {
       setServerError(result);
     } else if (Array.isArray(result.data)) {
